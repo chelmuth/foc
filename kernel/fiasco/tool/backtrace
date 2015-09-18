@@ -169,7 +169,7 @@ while (<>)
       }
     }
   }
-  elsif (/^\[.*\]   ([0-9a-f]*).*?\/(.*)/) # Genode shared library info
+  elsif (/^\[.*\]   ([0-9a-f]*).*?: (.*)/) # Genode shared library info
   {
 	my $base = new Math::BigInt("0x$1");
 	my $img = $2;
